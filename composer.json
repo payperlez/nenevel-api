@@ -1,0 +1,34 @@
+{
+    "name": "nenevel-api/framework",
+    "description": "DoItYourself PHP Micro Framework",
+    "keywords": ["do it yourself", "framework"],
+    "license": "MIT",
+    "version": "0.1",
+    "minimum-stability": "dev",
+    "authors": [
+        {
+            "name": "Obed Ademang",
+            "email": "obed.ademang@gmail.com",
+            "role": "owner"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "vlucas/phpdotenv": "^2.2",
+        "ircmaxell/password-compat": "^1.0",
+        "pecee/simple-router": "4.2.0.3",
+        "filp/whoops": "^2.3",
+        "wixel/gump": "^1.5",
+        "symfony/console": "^5.1@dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "ext",
+            "DIY\\": "libs/",
+            "App\\": "app/"
+        },
+        "classmap": [
+            "ext/"
+        ]
+    }
+}
